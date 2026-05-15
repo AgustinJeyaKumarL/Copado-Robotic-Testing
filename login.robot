@@ -8,3 +8,6 @@ Login Test
     TypeText    Password    Agustin05$
     ClickText    Log In
     Sleep    5s
+Lead Creation
+    [Documentation]    Test Case created using the QEditor
+
