@@ -1,14 +1,20 @@
-#
-# Test asset originally created using Copado QEditor.
-#
-
 *** Settings ***
-
-Library    QWeb
+Documentation     Salesforce Login Test
+Library           QForce
+Suite Setup       Open Browser    about:blank    chrome
+Suite Teardown    Close All Browsers
 
 *** Test Cases ***
+Verify Salesforce Login
+    [Documentation]    Login to Salesforce and verify successful login
 
-Testing One
-    [Documentation]    Test Case created using the QEditor
+    GoTo               https://login.salesforce.com/
 
-    OpenBrowser    about:blank    chrome
+    TypeText           Username    jeyakumar@agentforce.com
+    TypeText           Password    Agustin05$
+
+    ClickText          Log In
+
+    Sleep              5s
+
+    VerifyText         Home
