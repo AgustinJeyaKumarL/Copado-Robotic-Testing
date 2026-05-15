@@ -7,6 +7,7 @@ Login Test
     TypeText    Username    jeyakumar@agentforce.com
     TypeText    Password    Agustin05$
     ClickText    Log In
+    TypeText     
     Sleep    5s
 
 
