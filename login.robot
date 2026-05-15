@@ -1,14 +1,10 @@
-#
-# Test asset originally created using Copado QEditor.
-#
-
 *** Settings ***
-
-Library    QWeb
+Library    QForce
 
 *** Test Cases ***
-
-Login
-    [Documentation]    Test Case created using the QEditor
-
-    OpenBrowser    about:blank    chrome
+Login Test
+    Open Browser    https://login.salesforce.com    chrome
+    TypeText    Username    jeyakumar@agentforce.com
+    TypeText    Password    Agustin05$
+    ClickText    Log In
+    Sleep    5s
