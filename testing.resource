@@ -6,15 +6,14 @@ Suite Teardown    Close All Browsers
 
 *** Test Cases ***
 Verify Salesforce Login
-    [Documentation]    Login to Salesforce and verify successful login
 
-    GoTo               https://login.salesforce.com/
+    GoTo    https://login.salesforce.com/
 
-    TypeText           Username    jeyakumar@agentforce.com
-    TypeText           Password    Agustin05$
+    TypeText    Username    jeyakumar@agentforce.com
+    TypeText    Password    Agustin05$
 
-    ClickText          Log In
+    ClickText    Log In
 
-    Sleep              5s
+    Sleep    5s
 
-    VerifyText         Home
+    VerifyText    Home
